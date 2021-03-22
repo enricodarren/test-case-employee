@@ -1,0 +1,65 @@
+<h1 mat-dialog-title class="header-detail">Detail Employee - {{data.data.first_name}} {{data.data.last_name}}</h1>
+<div>
+    <div class="row">
+        <div class="col">
+            <span class="title-detail">First Name:</span> {{data.data.first_name}}
+        </div>
+        <div class="col">
+            <span class="title-detail">Last Name:</span> {{data.data.last_name}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <span class="title-detail">Email:</span> {{data.data.email}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <span class="title-detail">Username:</span> {{data.data.username}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <span class="title-detail">Birthdate:</span> {{data.data.birthdate | date: 'dd MMMM yyyy'}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <span class="title-detail">Gender:</span> {{data.data.gender}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <span class="title-detail">Group:</span> {{data.data.group}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <span class="title-detail">Basic Salary:</span> Rp. {{data.data.basicSalary | number}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <span class="title-detail">Description:</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="desc-detail">
+                {{data.data.description}}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row text-right mt-3">
+    <div class="col">
+        <button mat-raised-button color="primary" (click)="onCloseClick()">Ok</button>
+    </div>
+</div>

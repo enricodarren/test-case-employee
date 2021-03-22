@@ -1,0 +1,21 @@
+.row {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.header-detail {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.title-detail {
+    font-weight: bold;
+}
+
+.desc-detail {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 7px;
+    height: 80px;
+    overflow: auto;
+}
